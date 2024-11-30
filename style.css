@@ -1,0 +1,205 @@
+
+nav{
+    height: 15vh !important;
+    /* background-color: rgba(255, 0, 0, 0.299); */
+    background-color: #5555556e;
+    color: #800000;
+    padding: 0 !important;
+}
+.nav-item a{
+    color: #800000 !important;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.nav-item a:hover{
+    background-color: #800000;
+    color: #ffffff !important;
+    padding: 0%; 
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.logo{
+    width: 20%;
+    height: 100%;
+}
+.logo img{
+    padding: 0;
+    width: 100%;
+}
+
+.nav-icon a{
+    color: #800000 ;
+    size: 2em !important;
+    margin-right:5px ;
+    font-weight: bold;
+    font-size: 1.4em;
+    padding: 5px ;
+} 
+.nav-icon a:hover{
+    /* background-color: #ffffff; */
+    color: #800000 !important;
+    padding: 10px; 
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.navbar-toggler{
+    /* color: aqua !important; */
+    background-color: #800000;
+}
+/* ******************************* */
+
+.myContainer{
+    width: 100%;
+    height: 85vh;
+}
+.myContainer img{
+    width: 100%;
+    height:100%;
+}
+/* ****************************** */
+.card-img, .card-img-bottom, .card-img-top {
+    width: 100%;
+    height: 68%;
+}
+
+
+/* Section des cartes */
+.myContainerProduct-fluid{
+    width: 100%;
+    padding-left: 7px;
+}
+.cards-section {
+    display: flex;
+    justify-content: space-around;
+    /* gap: 30px; */
+    padding: 50px;
+    flex-wrap: wrap;
+    text-align: center;
+    /* position: relative; Pour éviter qu'elles ne soient affectées par d'autres éléments */
+    background-color: white; /* Fond blanc pour les cartes */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Légère ombre portée */
+    border-radius: 10px; /* Coins arrondis pour un effet plus doux */
+    z-index: 2; /* Assure que la section des cartes sera au-dessus du fond */
+}
+
+/* Style général des cartes */
+.card {
+    background-color: #fff;
+    /* width: 300px; */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(0);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Légère élévation au survol */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Ombre plus prononcée */
+}
+
+/* Image de la carte */
+.card-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover; /* Garde l'image bien dimensionnée */
+}
+
+/* Contenu de la carte */
+.card-content {
+    padding: 20px;
+}
+
+.card-title {
+    font-family: 'Amsterdam Four', sans-serif;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.card-availability {
+    font-size: 1.2rem;
+    color: #800000; /* Couleur rouge bordeaux */
+    font-weight: bold;
+}
+
+/* Animation d'apparition des cartes */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Appliquer l'animation d'apparition aux cartes */
+.card {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+/* Animation de survol des cartes */
+/* .card:hover {
+    transform: scale(1.05) rotate(5deg); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+} */
+ /* Animation d'apparition des cartes */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Déplace les cartes vers le bas */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Les cartes reviennent à leur position normale */
+    }
+}
+
+/* Appliquer l'animation aux cartes */
+.card {
+    animation: fadeInUp 1s ease-out forwards; /* Délai de 1 seconde avec une fluidité douce */
+}
+
+.card:nth-child(1) {
+    animation-delay: 0.2s; /* Délai pour un effet d'animation décalé */
+}
+
+.card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+/* **************************** */
+.containerContact-fluid{
+    background-image: url(logo2.png);
+    background-color: #5555556e;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    color: #ffffff;
+    font-size: large;
+    font-weight: bold;
+}
